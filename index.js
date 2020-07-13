@@ -1,12 +1,12 @@
 
 
 var button = document.querySelector('button');
-button.addEventListener('click', (event) => { 
-  console.log(event);
-});
+// button.addEventListener('click', (event) => { 
+//   console.log(event);
+// });
 
 
-/*
+
 var observer = {
   next: function(value) {
     console.log(value);
@@ -18,6 +18,6 @@ var observer = {
     console.log('Completed');
   }
 }
-*/
 
-//Rx.Observable.fromEvent(button, 'click').subscribe(observer);
+
+Rx.Observable.fromEvent(button, 'click').subscribe(observer);
